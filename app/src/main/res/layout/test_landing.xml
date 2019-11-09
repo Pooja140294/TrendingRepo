@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardMaxElevation="@dimen/dimen_10">
+
+    <ImageView
+        android:id="@+id/iv_TitleImg"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:src="@color/white_default"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_Food"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_titleName"
+            android:text="The Bake One (GhostForth)"
+            android:textSize="@dimen/font_20"
+            android:paddingTop="@dimen/dimen_5"
+            android:textColor="@color/charcoal_grey"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/iv_Food"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_subtitleName"
+            android:text="Lebanese"
+            android:textSize="@dimen/font_14"
+            android:paddingTop="@dimen/dimen_2"
+            android:textColor="@color/charcoal_grey_50"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_titleName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_minorder"
+            android:text="No Minimum Order"
+            android:textSize="@dimen/font_14"
+            android:paddingTop="@dimen/dimen_2"
+            android:textColor="@color/charcoal_grey_50"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitleName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_locationMarker"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:paddingTop="@dimen/dimen_5"
+            android:src="@drawable/location_marker"
+            android:tint="@color/charcoal_grey_50"
+            app:layout_constraintTop_toBottomOf="@id/tv_minorder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_location"
+            app:layout_constraintBottom_toBottomOf="@id/tv_location"
+            android:layout_marginLeft="@dimen/dimen_15"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:text="2.6567 miles"
+            android:textSize="@dimen/font_12"
+            android:paddingTop="@dimen/dimen_5"
+            android:textColor="@color/charcoal_grey_50"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_3"
+            android:paddingRight="@dimen/dimen_3"
+            app:layout_constraintTop_toBottomOf="@id/tv_minorder"
+            app:layout_constraintLeft_toRightOf="@id/iv_locationMarker"/>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            style = "?android:attr/ratingBarStyleSmall"
+            app:layout_constraintTop_toBottomOf="@id/tv_minorder"
+            app:layout_constraintRight_toLeftOf="@id/tv_rating"
+            app:layout_constraintTop_toTopOf="@id/tv_location"
+            app:layout_constraintBottom_toBottomOf="@id/tv_location"/>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:text="954"
+            android:textSize="@dimen/font_12"
+            android:paddingTop="@dimen/dimen_5"
+            android:textColor="@color/charcoal_grey_50"
+            android:fontFamily="@font/opensans_semibold"
+            android:paddingLeft="@dimen/dimen_3"
+            android:paddingRight="@dimen/dimen_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_minorder"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:background="@color/light_red"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rating">
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:text="25% off when you speand $34"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/app_color"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingLeft="@dimen/dimen_3"
+                android:paddingRight="@dimen/dimen_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"    />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

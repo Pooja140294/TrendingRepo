@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#e50000</color>
+    <color name="light_red">#FFEBED</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="brown_grey">#E8E8E8</color>
+    <color name="background">#dddddd</color>
+    <color name="text_color">#52575C</color>
+    <color name="default_status_bar_color">#fff</color>
+    <color name="progress_bar_color">#f39f1e</color>
+    <color name="white_default">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="very_light_pink">#dadada</color>
+    <color name="black_default">#212121</color>
+    <color name="red_default">#FF4747</color>
+    <color name="green_main">#009F61</color>
+    <color name="white_50">#50FFFFFF</color>
+    <color name="very_light_grey">#f6f6f6</color>
+    <color name="facebook_blue">#066298</color>
+
+    <color name="charcoal_grey">#36454f</color>
+    <color name="seafoam_blue">#70cbcf</color>
+    <color name="seafoam_blue_dark">#54abad</color>
+    <color name="dusty_blue">#54abad</color>
+
+    <color name="error_red">#e02020</color>
+
+    <color name="alpha_seafoam_blue">#1970cbcf</color>
+    <color name="rating_color">#4BC2C6</color>
+    <color name="feedback_rating_color">#ffd932</color>
+    <color name="bottomsheet_top_line">#d8d8d8</color>
+    <color name="spinner_text">#4d555b</color>
+    <color name="dropdown_bg">#f3f3f3</color>
+    <color name="cherry">#d9001b</color>
+    <color name="seafoam_blue_50">#8070cbcf</color>
+    <color name="seafoam_blue_31">#5070cbcf</color>
+    <color name="light_blue">#f8fafb</color>
+    <color name="receiver_chat_shadow">#18000000</color>
+    <color name="charcoal_grey_50">#8036454f</color>
+
+    <color name="default_notification_color">#FFFFFF</color>
+    <color name="default_progress_background">#ccc</color>
+    <color name="dark_off_white">#EEEEEE</color>
+</resources>

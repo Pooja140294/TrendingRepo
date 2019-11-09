@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="PageLoadingProgressBar" parent="@style/Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint" tools:ignore="NewApi">@color/progress_bar_color</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/background</item>
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">@color/background</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <style name="BorderlessButton" parent="Widget.AppCompat.Button.Borderless"/>
+
+    <style name="ButtonPositive" parent="BorderlessButton">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:background">@drawable/bg_rounded_btn_state</item>
+        <item name="android:textColor">@color/white_default</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">@dimen/text_xtiny</item>
+        <item name="fontFamily">@font/opensans</item>
+    </style>
+
+</resources>

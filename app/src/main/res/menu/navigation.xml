@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_restaurant"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        android:title="@string/restaurant"/>
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        android:title="@string/order"/>
+
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        android:title="@string/reservation"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"
+        android:title="@string/settings"/>
+
+</menu>
